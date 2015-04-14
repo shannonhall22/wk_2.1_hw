@@ -6,4 +6,9 @@ Each route in this app represents a problem or a solution. The controllers are n
 
 You don't need to change any code in the routes file or any of the views. Just change the code inside the controllers. You'll be able to see solutions in the controllers that have "_solutions" attached to the name.  All the actions are named the same, so you'll be able to easily check your work.
 
+In case you forgot where all the files are:
+
+- The routes file is in config > routes.rb
+- The controllers are in app > controllers
+- The views are in app > views
 
