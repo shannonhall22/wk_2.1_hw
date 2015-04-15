@@ -110,8 +110,9 @@ class HashesController < ApplicationController
     # Your code goes below
     #===============================================
     book = { "binding" => "hardcover", "color" => "red", "num_pages" => 372}
+    book['weight'] = "10 ounces"
 
-    @result = book
+    @result = book['weight']
     render 'hashes'
   end
 
@@ -126,8 +127,9 @@ class HashesController < ApplicationController
     # Your code goes below
     #===============================================
     user = { "id" => 45, "email" => "name@example.com" }
+    user["member_for"] = "234 days"
 
-    @result = user
+    @result = user['member_for']
     render 'hashes'
   end
 
@@ -142,8 +144,9 @@ class HashesController < ApplicationController
     # Your code goes below
     #===============================================
     item = { "name" => "bag", "brand" => "timbuk2", "price" => 79.00 }
+    item["color"] = "dark green"
 
-    @result = item
+    @result = item["color"]
     render 'hashes'
   end
 
