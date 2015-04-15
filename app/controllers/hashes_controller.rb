@@ -72,7 +72,7 @@ class HashesController < ApplicationController
         }
     }
 
-    @result = "Replace this string with your answer"
+    @result = user['birthday']['month']
     render 'hashes'
   end
 
@@ -93,7 +93,7 @@ class HashesController < ApplicationController
         }
     }
 
-    @result = "Replace this string with your answer"
+    @result = computer['battery']['life']
     render 'hashes'
   end
 
