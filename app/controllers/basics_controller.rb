@@ -87,21 +87,6 @@ class BasicsController < ApplicationController
 
   def combining_1
     #==== Instructions =================================
-    # When a user navigates to /combining/1 , she should see
-    # a string that combines the "first", "middle" and "last" variables
-    #
-    # Your code goes below
-    #===============================================
-    first = "Franklin"
-    middle = "Delano"
-    last = "Roosevelt"
-
-    @result = "Replace this string with your answer"
-    render 'basics'
-  end
-
-  def combining_1
-    #==== Instructions =================================
     # When a user navigates to /basics/7 , she should see
     # a string that combines the "first", "middle" and "last" variables
     #
@@ -111,7 +96,7 @@ class BasicsController < ApplicationController
     middle = "Delano"
     last = "Roosevelt"
 
-    @result = "Replace this string with your answer"
+    @result = first + " " + middle + " " + last
     render 'basics'
   end
 
@@ -125,7 +110,7 @@ class BasicsController < ApplicationController
     quantity = 13
     item = "coconuts"
 
-    @result = "Replace this string with your answer"
+    @result = quantity.to_s + " " + item
     render 'basics'
   end
 
@@ -140,7 +125,7 @@ class BasicsController < ApplicationController
     quantity = 12
     item = " monkeys"
 
-    @result = quantity + item
+    @result = quantity.to_s + item
     render 'basics'
   end
 end
