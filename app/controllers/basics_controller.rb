@@ -10,7 +10,7 @@ class BasicsController < ApplicationController
     # Your code goes below
     #===============================================
 
-    @result = "Replace this string with your answer"
+    @result = "It worked!"
     render 'basics'
   end
 
@@ -22,7 +22,7 @@ class BasicsController < ApplicationController
     # Your code goes below
     #===============================================
 
-    @result = "Replace this string with your answer"
+    @result = "7"
     render 'basics'
   end
 
@@ -38,7 +38,7 @@ class BasicsController < ApplicationController
     #===============================================
     country = "kyrgyzstan"
 
-    @result = "Replace this string with your answer"
+    @result = country
     render 'basics'
   end
 
@@ -51,7 +51,7 @@ class BasicsController < ApplicationController
     #===============================================
     phrase = "mYsPaCe"
 
-    @result = "Replace this string with your answer"
+    @result = phrase.lowercase
     render 'basics'
   end
 
