@@ -51,7 +51,7 @@ class BasicsController < ApplicationController
     #===============================================
     phrase = "mYsPaCe"
 
-    @result = phrase.lowercase
+    @result = phrase.downcase
     render 'basics'
   end
 
@@ -65,7 +65,7 @@ class BasicsController < ApplicationController
     #===============================================
     name = "neal"
 
-    @result = "Replace this string with your answer"
+    @result = name.capitalize
     render 'basics'
   end
 
@@ -78,7 +78,7 @@ class BasicsController < ApplicationController
     #===============================================
     phrase = "not a palindrome"
 
-    @result = "Replace this string with your answer"
+    @result = phrase.reverse
     render 'basics'
   end
 
